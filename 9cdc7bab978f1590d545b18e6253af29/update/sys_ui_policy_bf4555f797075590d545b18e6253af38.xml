@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_376096_pxpval_generic_data">state!=-5^EQ<item display_value="Pending" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>PXPVal - Generic Data - Mandatory Fields</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-15 16:53:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bf4555f797075590d545b18e6253af38</sys_id>
+        <sys_name>PXPVal - Generic Data - Mandatory Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sys_ui_policy_bf4555f797075590d545b18e6253af38</sys_update_name>
+        <table>x_376096_pxpval_generic_data</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

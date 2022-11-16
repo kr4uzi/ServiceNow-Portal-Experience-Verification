@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_376096_pxpval.ATFExtension</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Implements extension point x_376096_pxpval.ATFExtension</description>
+        <name>ATFExtension</name>
+        <script><![CDATA[var ATFExtension = Class.create();
+ATFExtension.prototype = {
+    initialize: function() {
+		
+    },
+	
+	handlesTable: function (recordTable) {
+		if (recordTable.startsWith(gs.getCurrentScopeName())) {
+			return true;
+		}
+		
+		return false;
+	},
+
+    recordExists: function (recordTable, recordSysID) {
+		var recordGr = new GlideRecord(recordTable);
+		recordGr.addQuery('sys_id', recordSysID);
+		recordGr.setLimit(1);
+		recordGr.query();
+		return recordGr.hasNext();
+	},
+
+    type: 'ATFExtension'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-15 14:17:37</sys_created_on>
+        <sys_id>2ad1f07797835590d545b18e6253afd1</sys_id>
+        <sys_name>ATFExtension</sys_name>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sys_script_include_2ad1f07797835590d545b18e6253afd1</sys_update_name>
+    </sys_script_include>
+</record_update>

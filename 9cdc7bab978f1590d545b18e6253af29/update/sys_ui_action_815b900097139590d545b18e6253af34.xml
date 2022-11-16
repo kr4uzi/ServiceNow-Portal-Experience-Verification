@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.canWrite()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Confirm Popup</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[/* global current, action */
+/* global gs */
+/* eslint no-undef: "error" */
+(function (genericDataGr, action) {
+	
+	var updated = genericDataGr.update() != null;
+	if (updated) {
+		gs.addInfoMessage(gs.getMessage('Successfully executed "Confirm Popup" UI Action'));
+	} else {
+		gs.addErrorMessage(gs.getMessage('Failed to execute "Confirm Popup" UI Action'));
+	}
+	
+	action.setRedirectURL(genericDataGr);
+	
+})(current, action);]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-16 07:31:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>815b900097139590d545b18e6253af34</sys_id>
+        <sys_name>Confirm Popup</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sys_ui_action_815b900097139590d545b18e6253af34</sys_update_name>
+        <table>x_376096_pxpval_generic_data</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+        <x_376096_cxp_style/>
+        <x_376096_pxp_client_script><![CDATA[/* eslint no-undef: "error" */
+function onClick($q, i18n, spModal) {
+
+	var deferred = $q.defer();
+	
+	var commentRequired = true;
+	var MODAL_TITLE = 'Confirm Save as Draft';
+	var MODAL_MESSAGE = 'Please provide a comment:';
+	var MODAL_MANDATORY_TEXT = 'A comment is mandatory';
+	
+	i18n.getMessages([MODAL_TITLE, MODAL_MESSAGE, MODAL_MANDATORY_TEXT], function (messages) {
+		var inputOptions = {
+			message: messages[MODAL_MESSAGE],
+			text: '',
+			textPlaceholder: '',
+			required: commentRequired
+		};
+		
+		return spModal.open({
+			title: messages[MODAL_TITLE],
+			widget: 'x_376096_pxp_prompt',
+			shared: inputOptions,
+			backdrop: false, // disable close by click
+			onSubmit: function () {
+				if (!inputOptions.required || inputOptions.text) {
+					return $q.resolve({ status: true });
+				}
+
+				return $q.resolve({ status: false, errorMessage: messages[MODAL_MANDATORY_TEXT] });
+			}
+		}).then(deferred.resolve, deferred.reject);
+	});
+	
+	return deferred.promise;
+}]]></x_376096_pxp_client_script>
+        <x_376096_pxp_enabled>true</x_376096_pxp_enabled>
+        <x_376096_pxp_list_label/>
+    </sys_ui_action>
+</record_update>

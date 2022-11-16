@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a61df7af978f1590d545b18e6253af4c" extends="task" label="Generic Data" max_length="40" name="x_376096_pxpval_generic_data" type="collection"/>
+</database>

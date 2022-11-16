@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Set the values within the modal:
+ selector(#pxp_confirm_text) = value(hello world)
+
+Click the button with the following selector: button.btn-primary</description>
+        <display_name>Click Modal Button (SP PXP)</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>9</order>
+        <step_config display_value="Click Modal Button (SP PXP)">5f9d29ff97475590d545b18e6253aff1</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-16 14:08:47</sys_created_on>
+        <sys_id>f3f8b18897579590d545b18e6253af16</sys_id>
+        <sys_name>Click Modal Button (SP PXP)</sys_name>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sys_atf_step_f3f8b18897579590d545b18e6253af16</sys_update_name>
+        <table/>
+        <test display_value="PXP - Validate Form Client UI Actions">c07428b797435590d545b18e6253af53</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=f3f8b18897579590d545b18e6253af16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f3f8b18897579590d545b18e6253af16</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-16 14:08:47</sys_created_on>
+        <sys_id>0769798897579590d545b18e6253af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-16 14:08:47</sys_updated_on>
+        <value>button.btn-primary</value>
+        <variable display_value="Button">04f5bd8497579590d545b18e6253af30</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f3f8b18897579590d545b18e6253af16</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-16 14:08:47</sys_created_on>
+        <sys_id>0f69798897579590d545b18e6253af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-16 14:08:47</sys_updated_on>
+        <value/>
+        <variable display_value="Assert type">cc57f50897579590d545b18e6253aff7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f3f8b18897579590d545b18e6253af16</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-16 14:08:47</sys_created_on>
+        <sys_id>cf69798897579590d545b18e6253af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-16 14:08:47</sys_updated_on>
+        <value>{"#pxp_confirm_text":"hello world"}</value>
+        <variable display_value="Modal values">9e77f10897579590d545b18e6253af66</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_5f9d29ff97475590d545b18e6253aff1^id=f3f8b18897579590d545b18e6253af16"/>
+</record_update>
