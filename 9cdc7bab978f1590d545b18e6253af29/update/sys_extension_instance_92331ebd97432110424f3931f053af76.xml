@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_extension_instance">
+    <sys_extension_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <point>x_376096_pxp.PXPExtension</point>
+        <script_include display_value="PXPExtension">1a331ebd97432110424f3931f053af73</script_include>
+        <sys_class_name>sys_extension_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-27 12:26:20</sys_created_on>
+        <sys_id>92331ebd97432110424f3931f053af76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_pxp.PXPExtension</sys_name>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sys_extension_instance_92331ebd97432110424f3931f053af76</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-27 12:26:20</sys_updated_on>
+    </sys_extension_instance>
+</record_update>

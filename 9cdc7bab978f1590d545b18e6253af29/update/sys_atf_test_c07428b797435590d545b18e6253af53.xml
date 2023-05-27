@@ -5,18 +5,21 @@
         <description/>
         <enable_parameterized_testing>false</enable_parameterized_testing>
         <fail_on_server_error>true</fail_on_server_error>
-        <name>PXP - Validate Form Client UI Actions</name>
+        <name>PXPVal - Validate Form Client UI Actions</name>
         <parameters/>
         <remember/>
         <sys_class_name>sys_atf_test</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-15 13:19:31</sys_created_on>
         <sys_id>c07428b797435590d545b18e6253af53</sys_id>
-        <sys_name>PXP - Validate Form Client UI Actions</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PXPVal - Validate Form Client UI Actions</sys_name>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_atf_test_c07428b797435590d545b18e6253af53</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-27 11:56:09</sys_updated_on>
     </sys_atf_test>
     <sys_variable_value action="delete_multiple" query="document_key=c07428b797435590d545b18e6253af53"/>
 </record_update>
