@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>gs.action.getGlideURI().toString().startsWith('api/now/sp') &amp;&amp; current.canWrite()</condition>
+        <condition>current.canCreate()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -18,8 +18,8 @@
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
-        <list_action>false</list_action>
-        <list_banner_button>false</list_banner_button>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
         <list_button>false</list_button>
         <list_choice>false</list_choice>
         <list_context_menu>false</list_context_menu>
@@ -27,45 +27,82 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Save as Draft</name>
+        <name>New Record</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[/* global current, action */
+/* global gs */
 /* eslint no-undef: "error" */
 (function (genericDataGr, action) {
 	
-	genericDataGr.update();
-	action.setRedirectURL(genericDataGr);
+	//var updated = genericDataGr.update() != null;
+	//if (updated) {
+		gs.addInfoMessage(gs.getMessage('Successfully executed "New Record" UI Action'));
+	//} else {
+	//	gs.addErrorMessage(gs.getMessage('Failed to execute "Confirm Popup" UI Action'));
+	//}
+	
+	//action.setRedirectURL(genericDataGr);
 	
 })(current, action);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
-        <show_update>true</show_update>
+        <show_update>false</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-15 16:55:19</sys_created_on>
+        <sys_created_on>2023-05-28 09:12:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>fcf55df797075590d545b18e6253af94</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Save as Draft</sys_name>
+        <sys_id>25bfaace97836110424f3931f053afd0</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>New Record</sys_name>
         <sys_overrides/>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
-        <sys_update_name>sys_ui_action_fcf55df797075590d545b18e6253af94</sys_update_name>
+        <sys_update_name>sys_ui_action_25bfaace97836110424f3931f053afd0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-28 13:53:58</sys_updated_on>
+        <sys_updated_on>2023-05-28 15:27:39</sys_updated_on>
         <table>x_376096_pxpval_generic_data</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
         <x_376096_pxp_client_script><![CDATA[/* eslint no-undef: "error" */
-function onClick(g_form) {
-
-    g_form.setMandatory('short_description', false);
-	g_form.setMandatory('description', false);
+function onClick($rootScope, $uibModalStack, spModal) {	
+	var submittedUnsubscribe = $rootScope.$on('sp.form.submitted', function () {
+		submittedUnsubscribe();
+		
+		var popup = $uibModalStack.getTop();
+		popup.key.dismiss();
+		
+		// after for has been submitted, the OOTB form will redirect to form with the assigned SysID
+		var locationUnsubscribe = $rootScope.$on('$locationChangeStart', function(event) {
+			locationUnsubscribe();
+			
+			event.preventDefault();
+		});
+	});
 	
+    var promise = spModal
+        .open({
+			headerStyle: {
+				display: 'none'
+			},
+			footerStyle: {
+				display: 'none'
+			},
+            title: 'New Generic Data',
+            widget: 'widget-form', 
+            widgetInput: {
+                table: 'x_376096_pxpval_generic_data',
+                sys_id: '-1'
+            }
+        })['finally'](function () {
+			submittedUnsubscribe();
+			return false;
+		});
+
+    return promise;
 }]]></x_376096_pxp_client_script>
         <x_376096_pxp_enabled>true</x_376096_pxp_enabled>
         <x_376096_pxp_list_disabled_condition/>

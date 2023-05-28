@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.canWrite()</condition>
+        <condition>gs.action.getGlideURI().toString().startsWith('api/now/sp') &amp;&amp; current.canWrite()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,7 +27,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Confirm Popup</name>
+        <name>Set description</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[/* global current, action */
@@ -55,15 +55,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>815b900097139590d545b18e6253af34</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Confirm Popup</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Set description</sys_name>
         <sys_overrides/>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_ui_action_815b900097139590d545b18e6253af34</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-27 17:22:17</sys_updated_on>
+        <sys_updated_on>2023-05-28 14:48:09</sys_updated_on>
         <table>x_376096_pxpval_generic_data</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
@@ -98,8 +98,7 @@ function onClick($q, i18n, spModal, g_form) {
 			}
 		}).then(function () {
 			g_form.setValue('description', inputOptions.text);
-			deferred.resolve();
-		}, deferred.reject);
+		})['finally'](deferred.reject);
 	});
 	
 	return deferred.promise;

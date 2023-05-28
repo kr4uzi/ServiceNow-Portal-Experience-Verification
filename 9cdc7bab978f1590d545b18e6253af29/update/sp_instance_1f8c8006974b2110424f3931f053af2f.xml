@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ec8c0006974b2110424f3931f053afea</sp_column>
+        <sp_widget display_value="Image Link">86776e0453331300a699ddeeff7b12be</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-27 21:16:42</sys_created_on>
+        <sys_id>1f8c8006974b2110424f3931f053af2f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sp_instance_1f8c8006974b2110424f3931f053af2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-28 07:54:40</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"image": {
+		"value": "aes_resources_form_designer.svg",
+		"displayValue": "aes_resources_form_designer.svg"
+	},
+	"title": {
+		"value": "Form Example",
+		"displayValue": "Form Example"
+	},
+	"description": {
+		"value": "Open a sample form with Client Side UI Actions",
+		"displayValue": "Open a sample form with Client Side UI Actions"
+	},
+	"link": {
+		"value": "pxpval?id=form&table=x_376096_pxpval_generic_data&sys_id=-1",
+		"displayValue": "pxpval?id=form&table=x_376096_pxpval_generic_data&sys_id=-1"
+	},
+	"link_title": {
+		"value": "Open OOTB Form",
+		"displayValue": "Open OOTB Form"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=1f8c8006974b2110424f3931f053af2f"/>
+</record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">317f564e97436110424f3931f053af36</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-28 07:58:30</sys_created_on>
+        <sys_id>ba7fd60e97436110424f3931f053af9d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Portal Experience</sys_name>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sp_instance_ba7fd60e97436110424f3931f053af9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-28 08:31:40</sys_updated_on>
+        <title>Portal Experience</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1>Welcome to the Portal Experience Home Page&nbsp;</h1>\r\n<p>The Portal Experience scoped app was developed as an extension for the Out-of-the-box (OOTB) Service Portal technology. This means:</p>\r\n<ul>\r\n<li>\"Plug &amp; Play\": No modifications on any portal pages are required</li>\r\n<li>Fully compatible with all OOTB form and list (\"data-table\") widgets</li>\r\n<li>Automated Test Framework compatibility</li>\r\n<li>Configuration like Client Side UI Actions and Field Styles is done on the OOTB forms</li>\r\n</ul>",
+		"displayValue": "<h1>Welcome to the Portal Experience Home Page&nbsp;</h1>\n<p>The Portal Experience scoped app was developed as an extension for the Out-of-the-box (OOTB) Service Portal technology. This means:</p>\n<ul>\n<li>\"Plug &amp; Play\": No modifications on any portal pages are required</li>\n<li>Fully compatible with all OOTB form and list (\"data-table\") widgets</li>\n<li>Automated Test Framework compatibility</li>\n<li>Configuration like Client Side UI Actions and Field Styles is done on the OOTB forms</li>\n</ul>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba7fd60e97436110424f3931f053af9d"/>
+</record_update>

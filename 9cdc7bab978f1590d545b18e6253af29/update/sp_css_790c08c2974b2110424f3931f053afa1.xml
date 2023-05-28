@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>td.pxpval_red::before {&#13;
+  content: '';&#13;
+  background-color: red;&#13;
+  margin-right: 6px;&#13;
+  width: 8px;&#13;
+  height: 8px;&#13;
+  display: inline-block;&#13;
+  vertical-align: middle;&#13;
+  -moz-border-radius: 4px;&#13;
+  -webkit-border-radius: 4px;&#13;
+  border-radius: 4px;&#13;
+}&#13;
+&#13;
+td.pxpval_orange::before {&#13;
+  content: '';&#13;
+  background-color: orange;&#13;
+  margin-right: 6px;&#13;
+  width: 8px;&#13;
+  height: 8px;&#13;
+  display: inline-block;&#13;
+  vertical-align: middle;&#13;
+  -moz-border-radius: 4px;&#13;
+  -webkit-border-radius: 4px;&#13;
+  border-radius: 4px;&#13;
+}&#13;
+&#13;
+td.pxpval_warning::before {&#13;
+  content: '';&#13;
+  background-image: url('indicator-ais.svg');&#13;
+  background-repeat: no-repeat;&#13;
+  padding-right: 20px;&#13;
+}</css>
+        <name>PXPVal List Field Styles</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-27 21:15:08</sys_created_on>
+        <sys_id>790c08c2974b2110424f3931f053afa1</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>PXPVal List Field Styles</sys_name>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sp_css_790c08c2974b2110424f3931f053afa1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-28 08:39:48</sys_updated_on>
+    </sp_css>
+</record_update>
