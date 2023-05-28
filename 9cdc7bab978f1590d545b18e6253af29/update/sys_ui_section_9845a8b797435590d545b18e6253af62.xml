@@ -1,156 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="9845a8b797435590d545b18e6253af62" sys_domain="global" table="x_376096_pxpval_generic_data" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>5241585e970b6110424f3931f053af0d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
+            <text>Example annotation: ${ current.isNewRecord() ? 'This is a new record - ' + current.number : 'This is an existing record' }</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>5241585e970b6110424f3931f053af0d</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7c75a8f797435590d545b18e6253afca</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9e41989e970b6110424f3931f053af22</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9241989e970b6110424f3931f053af23</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7075a8f797435590d545b18e6253afcb</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9641989e970b6110424f3931f053af23</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7475a8f797435590d545b18e6253afcb</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9a41989e970b6110424f3931f053af23</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7875a8f797435590d545b18e6253afcb</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9e41989e970b6110424f3931f053af23</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>parent</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7c75a8f797435590d545b18e6253afcb</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9241989e970b6110424f3931f053af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7075a8f797435590d545b18e6253afcc</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9641989e970b6110424f3931f053af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7475a8f797435590d545b18e6253afcc</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9a41989e970b6110424f3931f053af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7875a8f797435590d545b18e6253afcc</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9e41989e970b6110424f3931f053af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>comments</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7c75a8f797435590d545b18e6253afcc</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9241989e970b6110424f3931f053af25</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>work_notes</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7075a8f797435590d545b18e6253afcd</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9641989e970b6110424f3931f053af25</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity.xml</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-15 13:23:26</sys_created_on>
-            <sys_id>7475a8f797435590d545b18e6253afcd</sys_id>
+            <sys_created_on>2023-05-28 16:15:35</sys_created_on>
+            <sys_id>9a41989e970b6110424f3931f053af25</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_376096_pxpval_generic_data" sys_domain="global" view="Default view">9845a8b797435590d545b18e6253af62</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 13:23:26</sys_updated_on>
+            <sys_updated_on>2023-05-28 16:15:35</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -165,12 +190,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>9845a8b797435590d545b18e6253af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>x_376096_pxpval_generic_data</sys_name>
             <sys_overrides/>
             <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
             <sys_policy/>
             <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
             <sys_update_name>sys_ui_section_9845a8b797435590d545b18e6253af62</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-27 11:22:27</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
