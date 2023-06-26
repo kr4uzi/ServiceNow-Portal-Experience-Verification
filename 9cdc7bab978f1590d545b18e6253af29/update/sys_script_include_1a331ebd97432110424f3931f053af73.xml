@@ -7,7 +7,7 @@
         <client_callable>false</client_callable>
         <description>Implements extension point x_376096_pxp.PXPExtension</description>
         <name>PXPExtension</name>
-        <script><![CDATA[/* global Class, gs, GlideRecordSecure, GlideRecord, GlideScopedEvaluator */
+        <script><![CDATA[/* global Class, gs, GlideRecordSecure, GlideRecord, GlideScopedEvaluator, GlideChoiceList, GlideChoice, GlideController, GlideFilter */
 /* eslint no-undef: "error" */
 var PXPExtension = Class.create();
 PXPExtension.prototype = {
@@ -23,12 +23,21 @@ PXPExtension.prototype = {
 	 * @returns {boolean}
 	 */
 	handlesTable: function (table) {
-		// Note: While the following might be correct in most cases, this *must* be adjusted if you have opverlapping scopenames!
-		if (table.startsWith(gs.getCurrentScopeName() + '_')) {
+		var currentScopeName = gs.getCurrentScopeName();
+		if (table.startsWith(currentScopeName + '_')) {
+			// Note: While this check might be correct in most cases,
+			// this *must* be adjusted if you have opverlapping scopenames!
+			// Also this check always fails for global scoped tables
 			return true;
 		}
 		
-		return false;
+		// fallback: simply check the table's scope
+		var tableGr = new GlideRecord('sys_db_object');
+		tableGr.addQuery('sys_scope', currentScopeName);
+		tableGr.addQuery('name', table);
+		tableGr.setLimit(1);
+		tableGr.query();
+		return tableGr.hasNext();
 	},
 	
 	/**
@@ -39,7 +48,19 @@ PXPExtension.prototype = {
 	 * @returns {boolean}
 	 */
 	handlesScope: function (scopeName) {
-		return scopeName == gs.getCurrentScopeName();
+		var currentScopeName = gs.getCurrentScopeName();
+		if (scopeName == currentScopeName) {
+			return true;
+		}
+		
+		var isGlobalScope = currentScopeName == 'global' || currentScopeName == 'rhino.global';
+		if (isGlobalScope) {
+			if (scopeName == 'global' || scopeName == 'rhino.global') {
+				return true;
+			}
+		}
+		
+		return false;
 	},
 
 	/**
@@ -111,6 +132,57 @@ PXPExtension.prototype = {
 			anyGr[fieldName] = fieldValue;
 		}
 	},
+	
+	/**
+	 * This method is used to generate the process flow for a given record.
+	 * The Extension Point will be tested via handlesTable.
+	 *
+	 * @param {GlideRecord} anyGr
+	 * @returns {GlideChoiceList}
+	 */
+	getProcessFlow: function (anyGr) {
+		var tableName = anyGr.getRecordClassName();
+
+		var currentScopeName = gs.getCurrentScopeName();
+		var isGlobalScope = currentScopeName == 'global' || currentScopeName == 'rhino.global';
+		if (isGlobalScope) {
+			// Note: This works only for global scoped tables
+			// To reuse a global scoped defined <table>_ProcessFlowList function, it is recommended to 
+			// use a script include which is used by your ExtensionPoint as well as the global function
+			
+			// /nav_to.do?uri=sys_ui_macro.do?sys_id=a34bba13c3332100b0449f2974d3aeba
+			var functionName = tableName + "_ProcessFlowList";
+			var func = GlideController.getGlobal(functionName);
+			if (typeof func == 'function') {
+				var current = anyGr;
+				return func();
+			}
+		}
+		
+		// Fallback: Generate Process Flow based on OOTB configuration
+		var processFlowGr = new GlideRecord('sys_process_flow');
+		processFlowGr.addQuery('table', tableName);
+		processFlowGr.addQuery('active', true);
+		processFlowGr.orderBy('order');
+		processFlowGr.query();
+
+		var hasCurrent = false;
+		var list = new GlideChoiceList();
+		while (processFlowGr.next()) {
+			var choice = new GlideChoice(processFlowGr.name, processFlowGr.getDisplayValue('label'));
+			var match = GlideFilter.checkRecord(anyGr, processFlowGr.condition);
+			if (match) {
+				choice.setParameter('state', 'current');
+				hasCurrent = true;
+			} else {
+				choice.setParameter('state', hasCurrent ? 'future' : 'past');
+			}
+
+			list.add(choice);
+		}
+
+		return list;
+	},
 
     type: 'PXPExtension'
 };]]></script>
@@ -118,13 +190,13 @@ PXPExtension.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-27 12:26:20</sys_created_on>
         <sys_id>1a331ebd97432110424f3931f053af73</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>PXPExtension</sys_name>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_script_include_1a331ebd97432110424f3931f053af73</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-27 17:00:07</sys_updated_on>
+        <sys_updated_on>2023-06-26 21:26:05</sys_updated_on>
     </sys_script_include>
 </record_update>
