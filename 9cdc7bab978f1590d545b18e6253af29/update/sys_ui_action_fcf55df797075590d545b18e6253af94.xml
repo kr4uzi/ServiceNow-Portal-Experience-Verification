@@ -34,11 +34,15 @@
 /* eslint no-undef: "error" */
 (function (genericDataGr, action) {
 	
-	genericDataGr.update();
+	if (genericDataGr.isNewRecord()) {
+		genericDataGr.insert();
+	} else {
+		genericDataGr.update();
+	}
 	action.setRedirectURL(genericDataGr);
 	
 })(current, action);]]></script>
-        <show_insert>false</show_insert>
+        <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -48,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcf55df797075590d545b18e6253af94</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Save as Draft</sys_name>
         <sys_overrides/>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
@@ -56,10 +60,11 @@
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_ui_action_fcf55df797075590d545b18e6253af94</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-28 13:53:58</sys_updated_on>
+        <sys_updated_on>2023-08-15 13:09:50</sys_updated_on>
         <table>x_376096_pxpval_generic_data</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
+        <x_376096_cxp_style/>
         <x_376096_pxp_client_script><![CDATA[/* eslint no-undef: "error" */
 function onClick(g_form) {
 
