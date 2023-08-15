@@ -4,37 +4,39 @@
         <application display_value="Portal Experience Validation">d4ec73af978f1590d545b18e6253afd0</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="sys_ui_style">sys_scope=9cdc7bab978f1590d545b18e6253af29^EQ<item display_table="sys_scope" display_value="Portal Experience Validation" endquery="false" field="sys_scope" goto="false" newquery="false" operator="=" or="false" value="9cdc7bab978f1590d545b18e6253af29"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Generic Data</mobile_title>
+        <mobile_title>Field Styles</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_376096_pxpval_generic_data</name>
-        <order>100</order>
+        <name>sys_ui_style</name>
+        <order>310</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-15 10:28:29</sys_created_on>
+        <sys_created_on>2023-08-15 12:16:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ce6d3faf978f1590d545b18e6253af1c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Sample Data</sys_name>
+        <sys_id>2b2fc6e797603110d70ef207f053af3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Field Styles</sys_name>
         <sys_overrides/>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
-        <sys_update_name>sys_app_module_ce6d3faf978f1590d545b18e6253af1c</sys_update_name>
+        <sys_update_name>sys_app_module_2b2fc6e797603110d70ef207f053af3e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-15 12:18:12</sys_updated_on>
+        <sys_updated_on>2023-08-15 12:16:52</sys_updated_on>
         <timeline_page/>
-        <title>Sample Data</title>
+        <title>Field Styles</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

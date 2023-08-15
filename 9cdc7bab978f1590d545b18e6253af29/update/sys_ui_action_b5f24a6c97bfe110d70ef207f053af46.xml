@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>sysverb_update</action_name>
+        <action_name/>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>gs.action.getGlideURI().toString().startsWith('api/now/sp') &amp;&amp; current.canWrite()</condition>
-        <form_action>true</form_action>
-        <form_button>true</form_button>
+        <condition/>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
-        <form_style>primary</form_style>
+        <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
-        <list_action>false</list_action>
+        <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Save Form</name>
+        <name>X</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[/* global current, action */
+/* global gs */
 /* eslint no-undef: "error" */
 (function (genericDataGr, action) {
 	
+	var description = gs.action.getGlideURI().get('description');
+	genericDataGr.description = description;
 	genericDataGr.update();
+	
 	action.setRedirectURL(genericDataGr);
 	
 })(current, action);]]></script>
@@ -44,37 +48,60 @@
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-15 16:54:35</sys_created_on>
+        <sys_created_on>2023-06-29 20:50:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>b1d45db797075590d545b18e6253afba</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Save Form</sys_name>
+        <sys_id>b5f24a6c97bfe110d70ef207f053af46</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>X</sys_name>
         <sys_overrides/>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
-        <sys_update_name>sys_ui_action_b1d45db797075590d545b18e6253afba</sys_update_name>
+        <sys_update_name>sys_ui_action_b5f24a6c97bfe110d70ef207f053af46</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-28 14:29:41</sys_updated_on>
+        <sys_updated_on>2023-06-30 05:39:21</sys_updated_on>
         <table>x_376096_pxpval_generic_data</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
         <x_376096_cxp_style/>
         <x_376096_pxp_client_script><![CDATA[/* eslint no-undef: "error" */
-function onClick(g_form, spModal, $q) {
-    var promise = spModal
-        .confirm('Are you sure you want to save this record?')
-        .then(function (confirmed) {
-            if (confirmed) {
-                g_form.setValue('confirm', true);
-                return $q.resolve();
-            }
+function onClick($q, i18n, spModal, g_form, action) {
+	var deferred = $q.defer();
+	
+	var commentRequired = true;
+	var MODAL_TITLE = 'Confirm with description';
+	var MODAL_MESSAGE = 'Please provide a description:';
+	var MODAL_MANDATORY_TEXT = 'A description is mandatory';
+	
+	i18n.getMessages([MODAL_TITLE, MODAL_MESSAGE, MODAL_MANDATORY_TEXT], function (messages) {
+		var inputOptions = {
+			message: messages[MODAL_MESSAGE],
+			text: '',
+			textPlaceholder: '',
+			required: commentRequired
+		};
+		
+		return spModal.open({
+			title: messages[MODAL_TITLE],
+			widget: 'x_376096_pxp_prompt',
+			shared: inputOptions,
+			backdrop: false, // disable close by click
+			onSubmit: function () {
+				if (!inputOptions.required || inputOptions.text) {
+					return $q.resolve({ status: true });
+				}
 
-            return $q.reject();
-        });
-
-    return promise;
+				return $q.resolve({ status: false, errorMessage: messages[MODAL_MANDATORY_TEXT] });
+			}
+		}).then(function () {
+			// The 'action' Object is only available for List UI Actions
+			action.setURLParameter('description', inputOptions.text);
+			deferred.resolve();
+		}, deferred.reject);
+	});
+	
+	return deferred.promise;
 }]]></x_376096_pxp_client_script>
         <x_376096_pxp_enabled>true</x_376096_pxp_enabled>
         <x_376096_pxp_list_disabled_condition/>

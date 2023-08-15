@@ -16,14 +16,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-27 21:27:02</sys_created_on>
         <sys_id>fafe8886974b2110424f3931f053af8b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sp_instance_fafe8886974b2110424f3931f053af8b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-28 07:54:41</sys_updated_on>
+        <sys_updated_on>2023-06-30 05:37:59</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
@@ -41,7 +41,7 @@
 	},
 	"link": {
 		"value": "pxpval?id=list&table=x_376096_pxpval_generic_data",
-		"displayValue": "pxpval?id=list&table=x_376096_pxpval_generic_data"
+		"displayValue": "pxpval?id=list&table=x_376096_pxpval_generic_data&view=sp"
 	},
 	"link_title": {
 		"value": "Open OOTB List page",
