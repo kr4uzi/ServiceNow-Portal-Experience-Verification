@@ -2,6 +2,7 @@
     <sp_css_include action="INSERT_OR_UPDATE">
         <lazy_load>false</lazy_load>
         <name>PXPVal List Field Styles</name>
+        <rtl_css_file_url/>
         <source>local</source>
         <sp_css display_value="PXPVal List Field Styles">790c08c2974b2110424f3931f053afa1</sp_css>
         <sys_class_name>sp_css_include</sys_class_name>

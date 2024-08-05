@@ -45,5 +45,6 @@ td.pxpval_warning::before {&#13;
         <sys_update_name>sp_css_790c08c2974b2110424f3931f053afa1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-28 08:39:48</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_css>
 </record_update>

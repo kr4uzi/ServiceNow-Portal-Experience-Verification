@@ -8,19 +8,22 @@
         <mugshots_cache_json/>
         <notes>At this moment (2022/11/16) the 'Submit a Form (SP)' is defective and doesn't work because of a bug:&#13;
 https://www.servicenow.com/community/developer-forum/atf-step-submit-a-form-sp-no-longer-working/m-p/2385210</notes>
-        <order>5</order>
+        <order>6</order>
         <step_config display_value="Submit a Form (SP)">f410c93423220300ab65ff5e17bf651e</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-16 16:18:38</sys_created_on>
         <sys_id>8827560897d79590d545b18e6253afe0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Submit a Form (SP)</sys_name>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_atf_step_8827560897d79590d545b18e6253afe0</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:44:54</sys_updated_on>
         <table/>
-        <test display_value="PXP - Validate Form Client UI Actions">c07428b797435590d545b18e6253af53</test>
+        <test display_value="PXPVal - Validate Form Client UI Actions">c07428b797435590d545b18e6253af53</test>
         <timeout/>
         <warning_message/>
     </sys_atf_step>

@@ -53,12 +53,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>aff1d673970b5590d545b18e6253af7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>var__m_atf_input_variable_5f9d29ff97475590d545b18e6253aff1</sys_name>
             <sys_overrides/>
             <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
             <sys_policy/>
             <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
             <sys_update_name>sys_ui_section_aff1d673970b5590d545b18e6253af7e</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2024-07-28 19:28:22</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

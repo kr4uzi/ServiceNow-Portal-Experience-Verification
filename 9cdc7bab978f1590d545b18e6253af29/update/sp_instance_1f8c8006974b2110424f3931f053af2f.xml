@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">ec8c0006974b2110424f3931f053afea</sp_column>
-        <sp_widget display_value="Image Link">86776e0453331300a699ddeeff7b12be</sp_widget>
+        <sp_widget display_value="">86776e0453331300a699ddeeff7b12be</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-27 21:16:42</sys_created_on>

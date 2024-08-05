@@ -3,27 +3,29 @@
         <active>true</active>
         <copied_from/>
         <description>Set the values within the modal:
- selector(#pxp_confirm_text) = value(hello world)
+ selector(#pxp_confirm_text) = value({​{Step 1: Generate Random String.Random String}})
 
-Click the button with the following selector: button.btn-primary</description>
+Click the button with the following selector: button.btn-primary
+Assert the modal is closed and page not reloaded or redirected</description>
         <display_name>Click Modal Button (SP PXP)</display_name>
+        <inputs/>
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>9</order>
+        <order>10</order>
         <step_config display_value="Click Modal Button (SP PXP)">9f5af9b897db5110d545b18e6253afc3</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-16 14:08:47</sys_created_on>
         <sys_id>f3f8b18897579590d545b18e6253af16</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Click Modal Button (SP PXP)</sys_name>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_atf_step_f3f8b18897579590d545b18e6253af16</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-27 17:23:47</sys_updated_on>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:46:32</sys_updated_on>
         <table/>
         <test display_value="PXPVal - Validate Form Client UI Actions">c07428b797435590d545b18e6253af53</test>
         <timeout/>
@@ -61,6 +63,20 @@ Click the button with the following selector: button.btn-primary</description>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
         <document_key>f3f8b18897579590d545b18e6253af16</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:04:55</sys_created_on>
+        <sys_id>3b93c19a93bf8210e02873718bba10e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:04:55</sys_updated_on>
+        <value>button.btn-primary</value>
+        <variable display_value="Button">252cfbe3936b0210e02873718bba102e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f3f8b18897579590d545b18e6253af16</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -70,7 +86,21 @@ Click the button with the following selector: button.btn-primary</description>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-27 17:23:48</sys_updated_on>
         <value>form_submitted</value>
-        <variable display_value="Assert type">8a54cabd97032110424f3931f053afbf</variable>
+        <variable display_value="">8a54cabd97032110424f3931f053afbf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f3f8b18897579590d545b18e6253af16</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:04:55</sys_created_on>
+        <sys_id>7793c19a93bf8210e02873718bba10e7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:46:32</sys_updated_on>
+        <value>page_not_reloaded</value>
+        <variable display_value="Assert type">212cfbe3936b0210e02873718bba102a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
@@ -84,7 +114,7 @@ Click the button with the following selector: button.btn-primary</description>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-27 12:20:08</sys_updated_on>
         <value>{"#pxp_confirm_text":"hello world"}</value>
-        <variable display_value="Modal values">0e54cabd97032110424f3931f053afa5</variable>
+        <variable display_value="">0e54cabd97032110424f3931f053afa5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
@@ -112,7 +142,57 @@ Click the button with the following selector: button.btn-primary</description>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-27 12:20:08</sys_updated_on>
         <value>button.btn-primary</value>
-        <variable display_value="Button">ce54cabd97032110424f3931f053afc5</variable>
+        <variable display_value="">ce54cabd97032110424f3931f053afc5</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_9f5af9b897db5110d545b18e6253afc3^id=f3f8b18897579590d545b18e6253af16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f3f8b18897579590d545b18e6253af16</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:04:55</sys_created_on>
+        <sys_id>fb93c19a93bf8210e02873718bba10e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:46:32</sys_updated_on>
+        <value>{"#pxp_confirm_text":"{​{Step 1: Generate Random String.Random String}}"}</value>
+        <variable display_value="Modal values">512cfbe3936b0210e02873718bba1018</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f3f8b18897579590d545b18e6253af16"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>assert_type</field>
+        <id>f3f8b18897579590d545b18e6253af16</id>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:04:55</sys_created_on>
+        <sys_id>f3930d5a93bf8210e02873718bba109d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:04:55</sys_updated_on>
+        <table>var__m_atf_input_variable_9f5af9b897db5110d545b18e6253afc3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>button</field>
+        <id>f3f8b18897579590d545b18e6253af16</id>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:04:55</sys_created_on>
+        <sys_id>b7930d5a93bf8210e02873718bba109d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:04:55</sys_updated_on>
+        <table>var__m_atf_input_variable_9f5af9b897db5110d545b18e6253afc3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>modal_values</field>
+        <id>f3f8b18897579590d545b18e6253af16</id>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:04:55</sys_created_on>
+        <sys_id>f393c19a93bf8210e02873718bba10e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:43:11</sys_updated_on>
+        <table>var__m_atf_input_variable_9f5af9b897db5110d545b18e6253afc3</table>
+        <value>{"#pxp_confirm_text":"{{step['8e4c0dd69373c210e02873718bba10ac'].random_string}}"}</value>
+    </sys_element_mapping>
 </record_update>

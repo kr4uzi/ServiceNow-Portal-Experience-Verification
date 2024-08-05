@@ -64,7 +64,6 @@
         <table>x_376096_pxpval_generic_data</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
-        <x_376096_cxp_style/>
         <x_376096_pxp_client_script><![CDATA[/* eslint no-undef: "error" */
 function onClick($q, i18n, spModal, g_form, action) {
 	var deferred = $q.defer();

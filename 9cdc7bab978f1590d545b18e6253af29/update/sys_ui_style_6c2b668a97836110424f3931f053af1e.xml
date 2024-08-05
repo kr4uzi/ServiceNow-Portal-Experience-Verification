@@ -16,6 +16,7 @@
         <sys_update_name>sys_ui_style_6c2b668a97836110424f3931f053af1e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-28 08:52:44</sys_updated_on>
+        <themed_style/>
         <value>javascript: ['orange', 'red', 'warning'].indexOf(current.short_description.toString()) == -1</value>
         <x_376096_pxp_css_class/>
         <x_376096_pxp_enabled>true</x_376096_pxp_enabled>

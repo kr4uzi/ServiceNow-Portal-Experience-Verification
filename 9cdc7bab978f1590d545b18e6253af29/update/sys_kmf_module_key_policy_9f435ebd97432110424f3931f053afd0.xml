@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_module_key_policy">
     <sys_kmf_module_key_policy action="INSERT_OR_UPDATE">
-        <crypto_module display_value="pxp_record_encryption">a9e648cd97d39110d545b18e6253af47</crypto_module>
+        <crypto_module display_value="x_376096_pxp.pxp_record_encryption">a9e648cd97d39110d545b18e6253af47</crypto_module>
         <key_type display_value="Symmetric Data Encryption Key">1c38f324c7003300af4d43c6f097636e</key_type>
         <last_enforced>2023-05-27 12:26:40</last_enforced>
         <result>reject</result>

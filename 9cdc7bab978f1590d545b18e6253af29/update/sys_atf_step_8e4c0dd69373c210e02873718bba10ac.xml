@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Generate string of length: 10</description>
+        <display_name>Generate Random String</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Generate Random String">263313e4c3123300eaac11fe81d3aef9</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:42:48</sys_created_on>
+        <sys_id>8e4c0dd69373c210e02873718bba10ac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Generate Random String</sys_name>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
+        <sys_update_name>sys_atf_step_8e4c0dd69373c210e02873718bba10ac</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:44:53</sys_updated_on>
+        <table/>
+        <test display_value="PXPVal - Validate Form Client UI Actions">c07428b797435590d545b18e6253af53</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=8e4c0dd69373c210e02873718bba10ac"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8e4c0dd69373c210e02873718bba10ac</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:42:49</sys_created_on>
+        <sys_id>474cc11a9373c210e02873718bba10d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:42:49</sys_updated_on>
+        <value>10</value>
+        <variable display_value="Length">594393e4c3123300eaac11fe81d3aef0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_263313e4c3123300eaac11fe81d3aef9^id=8e4c0dd69373c210e02873718bba10ac"/>
+</record_update>

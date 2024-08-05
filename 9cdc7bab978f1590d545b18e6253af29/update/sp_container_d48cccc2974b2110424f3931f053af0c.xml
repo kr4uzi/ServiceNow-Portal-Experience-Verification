@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Portal Experience Validation Home - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="x_376096_pxpval_home">4d0ef7ef978f1590d545b18e6253afc5</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

@@ -2,25 +2,25 @@
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
         <copied_from/>
-        <description>Confirm that browser opens a modal / popup and does not submit the 'Generic Data' form to server when clicking UI Action 'Confirm Popup'</description>
+        <description>Confirm that browser opens a modal / popup and does not submit the 'Generic Data' form to server when clicking UI Action 'Set description'</description>
         <display_name>Click a UI Action (SP PXP)</display_name>
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>8</order>
+        <order>9</order>
         <step_config display_value="Click a UI Action (SP PXP)">32444d34971b5110d545b18e6253af91</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-16 14:11:14</sys_created_on>
         <sys_id>06e975c897579590d545b18e6253afe1</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Click a UI Action (SP PXP)</sys_name>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
         <sys_update_name>sys_atf_step_06e975c897579590d545b18e6253afe1</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-27 17:02:39</sys_updated_on>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:44:53</sys_updated_on>
         <table>x_376096_pxpval_generic_data</table>
         <test display_value="PXPVal - Validate Form Client UI Actions">c07428b797435590d545b18e6253af53</test>
         <timeout/>
@@ -39,7 +39,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-27 12:18:09</sys_updated_on>
         <value>815b900097139590d545b18e6253af34</value>
-        <variable display_value="UI Action">ce54cabd97032110424f3931f053afb8</variable>
+        <variable display_value="">ce54cabd97032110424f3931f053afb8</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
@@ -58,6 +58,20 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
         <document_key>06e975c897579590d545b18e6253afe1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:16:09</sys_created_on>
+        <sys_id>6c364d9e93bf8210e02873718bba10f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:16:09</sys_updated_on>
+        <value>x_376096_pxpval_generic_data</value>
+        <variable display_value="Table">5d2cfbe3936b0210e02873718bba1020</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>06e975c897579590d545b18e6253afe1</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -67,7 +81,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-27 17:02:39</sys_updated_on>
         <value>popup_expected</value>
-        <variable display_value="Assert type">4254cabd97032110424f3931f053afac</variable>
+        <variable display_value="">4254cabd97032110424f3931f053afac</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
@@ -100,6 +114,20 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
         <document_key>06e975c897579590d545b18e6253afe1</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:16:09</sys_created_on>
+        <sys_id>a8364d9e93bf8210e02873718bba10f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:16:09</sys_updated_on>
+        <value>popup_expected</value>
+        <variable display_value="Assert type">592cfbe3936b0210e02873718bba101c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>06e975c897579590d545b18e6253afe1</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -109,7 +137,21 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-27 12:18:09</sys_updated_on>
         <value>x_376096_pxpval_generic_data</value>
-        <variable display_value="Table">0a54cabd97032110424f3931f053afb2</variable>
+        <variable display_value="">0a54cabd97032110424f3931f053afb2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>06e975c897579590d545b18e6253afe1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:16:09</sys_created_on>
+        <sys_id>e4364d9e93bf8210e02873718bba10f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:16:09</sys_updated_on>
+        <value>815b900097139590d545b18e6253af34</value>
+        <variable display_value="UI Action">192cfbe3936b0210e02873718bba1025</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_32444d34971b5110d545b18e6253af91^id=06e975c897579590d545b18e6253afe1"/>
 </record_update>

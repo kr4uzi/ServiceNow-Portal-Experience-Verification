@@ -12,11 +12,14 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-15 10:28:30</sys_created_on>
-        <sys_id>d26d3faf978f1590d545b18e6253af6d</sys_id>
+        <sys_id>444cb327936b0210e02873718bba108f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_376096_pxpval_generic_data</sys_name>
         <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
         <sys_policy/>
         <sys_scope display_value="Portal Experience Validation">9cdc7bab978f1590d545b18e6253af29</sys_scope>
-        <sys_update_name>ua_table_licensing_config_d26d3faf978f1590d545b18e6253af6d</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_444cb327936b0210e02873718bba108f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-07-28 19:28:16</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

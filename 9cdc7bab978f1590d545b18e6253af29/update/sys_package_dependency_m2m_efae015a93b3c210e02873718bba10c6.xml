@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">c84cbf2af832021008dd9cfea425ac5e</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-05 19:53:13</sys_created_on>
+        <sys_id>efae015a93b3c210e02873718bba10c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Portal Experience Validation" source="x_376096_pxpval">9cdc7bab978f1590d545b18e6253af29</sys_package>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-05 19:53:13</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
